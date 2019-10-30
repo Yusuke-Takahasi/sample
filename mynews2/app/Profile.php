@@ -17,4 +17,12 @@ class Profile extends Model
     protected $gender = array('gender');
     protected $hobby = array('hobby');
     protected $introduction = array('introduction');
+    
+    public function histories()
+    {
+      return $this->hasMany('App\ProfileHistory');
+
+    }
 }
+
+
